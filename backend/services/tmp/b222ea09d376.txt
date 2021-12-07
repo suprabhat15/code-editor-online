@@ -1,6 +1,5 @@
-Command failed: g++ -o ./services/tmp/b222ea09d376 ./services/tmp/b222ea09d376.cpp
-./services/tmp/b222ea09d376.cpp:6:13: error: expected ';' at end of declaration
-    int n=10
-            ^
-            ;
-1 error generated.
+Command failed: python ./services/tmp/b222ea09d376.py
+Traceback (most recent call last):
+  File "./services/tmp/b222ea09d376.py", line 1, in <module>
+    prit("Hello world")
+NameError: name 'prit' is not defined
