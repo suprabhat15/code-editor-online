@@ -1,5 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { Flex } from "@chakra-ui/layout";
+import Output from "../components/Output";
+import CodeEditor from "../components/CodeEditor";
 import axios from "axios";
 import crypto from "crypto";
 
@@ -94,6 +96,15 @@ int main() {
 
   return (
     <Flex w="full" h="100vh">
+      <CodeEditor
+        language={language}
+        setLanguage={setLanguage}
+        code={code}
+        setCode={setCode}
+        runCode={runCode}
+        loading={loading}
+      />
+      <Output output={output} clearOutput={clearOutput} getOutput={getOutput} loading={loading} />
     </Flex>
   );
 };
