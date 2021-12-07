@@ -1,0 +1,6 @@
+Command failed: g++ -o ./services/tmp/b222ea09d376 ./services/tmp/b222ea09d376.cpp
+./services/tmp/b222ea09d376.cpp:6:13: error: expected ';' at end of declaration
+    int n=10
+            ^
+            ;
+1 error generated.
